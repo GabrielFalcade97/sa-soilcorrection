@@ -1,6 +1,9 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import java.util.Set;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 
 public enum FonteCalcioMagnesio 
         implements IFonteNutriente {

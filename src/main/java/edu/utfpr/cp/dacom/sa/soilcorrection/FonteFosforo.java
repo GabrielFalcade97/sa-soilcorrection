@@ -1,6 +1,9 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import java.util.Set;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 
 public enum FonteFosforo implements IFonteNutriente {
     SUPERFOSFATO_SIMPLES(0.18, Set.of(new NutrienteAdicional(NomeNutrienteAdicional.ENXOFRE, 0.1), new NutrienteAdicional(NomeNutrienteAdicional.CALCIO, 0.28))),
