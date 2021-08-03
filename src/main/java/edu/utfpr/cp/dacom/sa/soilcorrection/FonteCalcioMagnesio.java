@@ -19,5 +19,4 @@ public enum FonteCalcioMagnesio
      @Getter private final Set<NutrienteAdicional> nutrienteAdicionais;
 
     
-
 }

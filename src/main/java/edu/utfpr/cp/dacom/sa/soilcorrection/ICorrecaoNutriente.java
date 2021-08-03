@@ -1,6 +1,7 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import java.util.Set;
+import lombok.NonNull;
 
 public interface ICorrecaoNutriente<T extends IFonteNutriente> {
     
@@ -21,7 +22,7 @@ public interface ICorrecaoNutriente<T extends IFonteNutriente> {
 
     public default Set<NutrienteAdicional> getNutrientesAdicionais(
         double qtdeAplicar, 
-        T fonteNutriente) {
+        @NonNull T fonteNutriente) {
 
         fonteNutriente
             .getNutrientesAdicionais()
