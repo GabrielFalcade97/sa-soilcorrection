@@ -1,13 +1,15 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-import lombok.RequiredArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NonNull;
+import lombok.Builder;
 
-@RequiredArgsConstructor
+
+@Builder
 public class NutrienteAdicional {
 
-    private final NomeNutrienteAdicional nome;
+    @NonNull final NomeNutrienteAdicional nome;
     
     @Getter private final double teorNutriente;
 
